@@ -9,15 +9,15 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand>
-          <Link to="/">Home</Link>
+        <Navbar.Brand as={Link} to="/">
+          Home
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link>
-            <Link to="/users">Users</Link>
+          <Nav.Link as={Link} to="/users">
+            Users
           </Nav.Link>
-          <Nav.Link>
-            <Link to="/about">About</Link>
+          <Nav.Link as={Link} to="/about">
+            About
           </Nav.Link>
         </Nav>
       </Container>
